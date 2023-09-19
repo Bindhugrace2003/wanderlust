@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Wanderlust</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="public/reset.css" />
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="https://content.codecademy.com/courses/intermediate-javascript-requests/wanderlust/logo.svg"
+        alt="logo"
+      />
+    </header>
+    <main>
+      <h1>Where do you want to land?</h1>
+      <form autocomplete="off">
+        <input class="input" type="text" id="city" placeholder="City..." />
+        <input class="submit" type="submit" id="button" value="Submit" />
+      </form>
+    </main>
+
+    <h3 class="status"></h3>
+
+    <div class="container">
+      <div id="destination"></div>
+      <div class="sectiontitle">
+        <h2>CURRENT WEATHER</h2>
+      </div>
+      <section id="weather">
+        <div class="weather" id="weather1"></div>
+      </section>
+      <div class="sectiontitle">
+        <h2>TOP ATTRACTIONS</h2>
+      </div>
+      <section id="venues">
+        <div class="venue" id="venue1"></div>
+        <div class="venue" id="venue2"></div>
+        <div class="venue" id="venue3"></div>
+        <div class="venue" id="venue4"></div>
+      </section>
+      <footer></footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/helpers.js"></script>
+    <script src="public/main.js"></script>
+  </body>
+</html>
